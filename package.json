@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "description": "React hooks like useState but can accept partial state",
   "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "files": [
     "lib"
   ],
