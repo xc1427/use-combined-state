@@ -1,6 +1,6 @@
 {
   "name": "use-combined-state",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "React hooks like useState but can accept partial state",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
