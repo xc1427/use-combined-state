@@ -22,3 +22,5 @@ export function useCombinedState<S>(initialState:S | (() => S)):[S, SetPartialSt
   };
   return [ combinedState, setPartialState ];
 }
+
+export default useCombinedState;
