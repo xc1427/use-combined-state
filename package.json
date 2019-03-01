@@ -1,0 +1,27 @@
+{
+  "name": "use-combined-state",
+  "version": "0.1.0",
+  "description": "React hooks like useState but can accept partial state",
+  "main": "lib/index.js",
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "npm test && npm run build",
+    "pub": "npm publish --access=public"
+
+  },
+  "keywords": [
+    "react",
+    "hooks",
+    "useState"
+  ],
+  "author": "Chen XI <xichen1427@gmail.com>",
+  "license": "MIT",
+  "peerDependencies": {
+    "react": "^16.8.3",
+    "react-dom": "^16.8.3"
+  }
+}
