@@ -5,7 +5,7 @@ Restore how `setState` is used before React without hooks. Hooks is awesome. How
 
 ## Usage
 
-```
+```js
 import useCombinedState from 'use-combined-state';
 
 // ...
