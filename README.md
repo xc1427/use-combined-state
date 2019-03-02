@@ -10,16 +10,16 @@ import useCombinedState from 'use-combined-state';
 
 // ...
 
-const [ state, setState ] = useCombinedState({ visible: true, data: {/* initial data */} });
+const [ state, setState ] = useCombinedState({ visible: true, data: { titi: 'toto' } });
 
-// ...
 
+// set partial state to update, preserve `data` field.
 setState({
-  displayData: data,
+  visible: false,
 })
 
 setState((prevState) => ({
-  visible: !prevState.visible, // here you can set partial state to update
+  visible: !prevState.visible, // can passed a function which sets partial state
 }))
 
 <SomeComponent visible={state.visible}>
