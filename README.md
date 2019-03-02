@@ -1,7 +1,7 @@
 # use-combined-state
 
 ## Motivation
-Restore how `setState` is used before React without hooks. Hooks is awesome. However `setState` should be passed _full state_ as in Redux reducer. You may also find grouping state under a single "namespace" improve readability.
+Restore how `setState` is used before React without hooks. Hooks is awesome. However `setState` should be passed _full state_ as value returned in Redux reducer. You may also find grouping state under a single "namespace" improve readability.
 
 ## Usage
 
@@ -19,7 +19,7 @@ setState({
 })
 
 setState((prevState) => ({
-  visible: !prevState.visible,
+  visible: !prevState.visible, // here you can set partial state to update
 }))
 
 <SomeComponent visible={state.visible}>
