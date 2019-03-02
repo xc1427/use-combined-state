@@ -19,7 +19,7 @@ setState({
 })
 
 setState((prevState) => ({
-  visible: !prevState.visible, // can passed a function which sets partial state
+  visible: !prevState.visible, // can pass a function which sets partial state
 }))
 
 <SomeComponent visible={state.visible}>
