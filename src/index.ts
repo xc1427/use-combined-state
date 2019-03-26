@@ -13,11 +13,13 @@ export function useCombinedState<S>(initialState:S | (() => S)):[S, SetPartialSt
           ...partialState(prevState),
         };
       });
-    } else {
+    } else if (typeof partialState === 'object') {
       setCombinedState({
         ...combinedState,
         ...partialState,
       });
+    } else {
+      setCombinedState(partialState);
     }
   };
   return [ combinedState, setPartialState ];
